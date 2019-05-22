@@ -42,10 +42,10 @@ plt.errorbar(
     marker='x',
     linestyle='None',
     color='k',
-    label='simulation')
+    label='6 Mbps MCS')
 
 plt.xlabel(r'Nodes')
-plt.ylabel('Throughput')
+plt.ylabel('Throughput, Mbps')
 plt.grid()
 plt.legend(loc='best')
 
@@ -53,8 +53,8 @@ plt.legend(loc='best')
 DIFS = 34
 SIFS = 16
 slot = 9
-data = 1430
-ack = 60
+data = 1380
+ack = 36
 l = 1000
 CW_min = 15
 T_id, T_c, T_s = durations(slot, SIFS, DIFS, data, ack)
